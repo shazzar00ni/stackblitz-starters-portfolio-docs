@@ -1,23 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Home</title>
+    <title>John Doe - Portfolio</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
   </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
+  <body class="bg-gray-900 text-gray-100">
+    <nav class="fixed w-full bg-gray-800/80 backdrop-blur-sm z-50 px-6 py-4">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <a href="/" class="text-2xl font-bold gradient-text">John Doe</a>
+        <div class="flex gap-4">
+          <a href="/" class="nav-link" aria-current="page">Home</a>
+          <a href="/page2.html" class="nav-link">Projects</a>
+        </div>
+      </div>
     </nav>
-    <main>
-      <h1>Home page</h1>
+
+    <main class="pt-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col items-center text-center mb-16">
+          <h1 class="text-5xl font-bold mb-6">
+            Hi, I'm <span class="gradient-text">John Doe</span>
+          </h1>
+          <p class="text-xl text-gray-400 max-w-2xl">
+            A passionate full-stack developer specializing in building exceptional digital experiences.
+            Currently focused on creating accessible, human-centered products.
+          </p>
+        </div>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-12">
+          <div class="bg-gray-800 p-6 rounded-xl">
+            <h3 class="text-xl font-semibold mb-4">Frontend Development</h3>
+            <p class="text-gray-400">Creating responsive and intuitive user interfaces using modern web technologies.</p>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-xl">
+            <h3 class="text-xl font-semibold mb-4">Backend Development</h3>
+            <p class="text-gray-400">Building scalable server-side applications and RESTful APIs.</p>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-xl">
+            <h3 class="text-xl font-semibold mb-4">UI/UX Design</h3>
+            <p class="text-gray-400">Designing beautiful and functional user experiences.</p>
+          </div>
+        </section>
+      </div>
     </main>
   </body>
 </html>
